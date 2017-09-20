@@ -55,112 +55,179 @@ table {
 	All screens css
 
 -------------------------*/
+/*@media screen and (min-width : 482px) {*/
 
-body {
-	font-size: 12pt;
-	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
-}
+	body {
+/*		width: 480px;*/
+		font-size: 12pt;
+		font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	}
 
-.landing {
-	width: 100vw;
-	height: 100vh;
+	.landing {
+		width: 100vw;
+		height: 100vh;
+
+		background-image: url(../images/Composition-VII-the-three-graces—Theo-van-Doesburg.svg);
+		background-position: center;
+		background-size: auto 100vh;
+
+		display: flex;
+		align-content: flex-end;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+
+	a {
+		text-decoration: none;
+		color: hsla(0,0%,25%,0.75);
+		padding-bottom: 1px;
+		border-bottom: 0px solid hsla(0,0%,25%,1.00);
+		transition: color 0.25s ease-out 0s, border-bottom 0.25s ease-out 0s;
+	}
+
+	a:hover {
+	/*	text-decoration: underline;*/
+		border-bottom: 1.5px solid hsla(0,0%,50%,1.00);
+		color: hsla(0,0%,50%,1.00);
+	}
+
+	a:visited {
+	/*	text-decoration: underline;*/
+	/*	color: hsla(0,0%,75%,1.00)*/
+	}
+
+	h1 {
+		color: hsla(40,27%,94%,1.00);
+
+		font-weight: bold;
+		font-size: 10vw;
+		height: 10vw;
+		transform: rotate(30deg);
+	/*	border: 1px red solid;*/
+		margin: 0 5vw 20vh 0;
+		text-align: right;
+
+		text-shadow: 0 0 5vmax hsla(210,15%,15%,0.5);
+	}
+
+	.navigation {
+		width: 100vw;
+		height: 7vh;
+
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+
+	/*	border: 1px red solid;*/
+		z-index: 1;
+
+		font-size: 3.25vw;
+		background-color: hsla(47,28%,87%,1.00);
+
+		display: flex;
+		flex-wrap: nowrap;
+	/*	justify-content: space-around;*/
+		align-content: center;
+		align-items: center;
+	}
+
+	.navigation-container {
+		width: 100vw;
+		height: 4vh;
+
+		display: flex;
+		justify-content: space-evenly;
+		align-content: center;
+		align-items: center;
+		flex-wrap: nowrap;
+
+	}
+
+	.nav-li {
+		width: 16%;
+	/*	display: inline;*/
+		text-align: center;
+		font-weight: bold;
+
+	/*	border: 1px red solid;*/
+	}
 	
-	background-image: url(../images/Composition-VII-the-three-graces—Theo-van-Doesburg.svg);
-	background-position: center;
-	background-size: auto 100vh;
+	.nav-li:last-child {
+		width: 20%;	
+	}
 	
-	display: flex;
-	align-content: flex-end;
-	justify-content: flex-end;
-	align-items: flex-end;
-}
+	.nav-li:hover {
 
-a {
-	text-decoration: none;
-	color: hsla(0,0%,25%,0.75);
-	padding-bottom: 1px;
-	border-bottom: 0px solid hsla(0,0%,25%,1.00);
-	transition: color 0.25s ease-out 0s, border-bottom 0.25s ease-out 0s;
-}
+	}
 
-a:hover {
-/*	text-decoration: underline;*/
-	border-bottom: 1.5px solid hsla(0,0%,50%,1.00);
-	color: hsla(0,0%,50%,1.00);
-}
+	.nav-span {
 
-a:visited {
-/*	text-decoration: underline;*/
-/*	color: hsla(0,0%,75%,1.00)*/
-}
+	}
 
-h1 {
-	color: hsla(40,27%,94%,1.00);
+	.nav-span:hover {
+	}
 	
-	font-weight: bold;
-	font-size: 10vw;
-	height: 10vw;
-	transform: rotate(30deg);
-/*	border: 1px red solid;*/
-	margin: 0 5vw 20vh 0;
-	text-align: right;
-	
-	text-shadow: 0 0 5vmax hsla(210,15%,15%,0.5);
-}
+	main {
+		display: flex;
+		flex-direction: column;
+	/*	flex-wrap: nowrap;*/
+		justify-content: center;
 
-.navigation {
-	width: 100vw;
-	height: 8vmin;
-	
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	
-/*	border: 1px red solid;*/
-	z-index: 1;
-	
-	font-size: 3vmin;
-	background-color: hsla(47,28%,87%,1.00);
-	
-	display: flex;
-	flex-wrap: nowrap;
-/*	justify-content: space-around;*/
-	align-content: center;
-	align-items: center;
-}
+	}
 
-.navigation-container {
-	width: 100vw;
-	height: 4vmin;
+	.full-frame {
+		width: 100%;
+		height: auto;
+		
+		display: flex;
+		flex-direction: column;
+	}
+
+	.picture-container {
+		width: 100%;
+		height: 50vh;
+/*		border: 1px solid red;*/
+		background-color: hsla(0,0%,100%,1.00);
+		
+		display: flex;
+		justify-content: center;
+		align-content: center;
+/*		align-items: center;*/
+	}
 	
-	display: flex;
-	justify-content: space-evenly;
-	align-content: center;
-	align-items: center;
-	flex-wrap: nowrap;
+	.picture-container img {
+		width: auto;
+		height: auto;
+		max-width: 100%;
+		max-height: 100%;
+	}
 	
-}
+	article {
+		width:100%
+	}
 
-.nav-li {
-	width: 16vw;
-/*	display: inline;*/
-	text-align: center;
-	font-weight: bold;
+	article p {
+		padding: 20px;
+		
+		font-size: 11pt;
+		line-height: 1.2;
+	}
+
+	footer {
+		width:100%;
+		margin: 0 auto;
+		margin-bottom: 9vh;
+		padding-left: 20px;
+	}
 	
-/*	border: 1px red solid;*/
-}
-
-.nav-li:hover {
+	footer p {
+		padding:10px 0;
+	}
 	
-}
-
-.nav-span {
-
-}
-
-.nav-span:hover {
-}
-
+/*}*/
 /*
 @media only screen 
 and (min-device-width : 320px) 
@@ -170,14 +237,135 @@ and (max-device-width : 480px) {
 }
 */
 
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
+@media screen and (min-width : 731px) {
+/*and (max-device-width : 1024px) {*/
 /* iPads (portrait and landscape) ----------- */
+	
+	.navigation {
+		width: 731px;
+		
+		font-size: 14pt;	
+	}
+	
+	.navigation-container {
+		width: 100%;
+		height: 4vh;
+	}
+	
+	main {
+		max-width: 731px;
+		margin: 0 auto;
+/*		background-color: aquamarine;*/
+	}
 
+	.full-frame {
+		height: auto;
+		
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	.full-frame:nth-child(even){
+		flex-direction: row-reverse;
+	}
+	
+	article {
+		width: 482px;
+		
+	}
+	
+	article p {
+		font-size: 12pt;
+		padding: 20px 0;
+	}
+	
+	.picture-container {
+		width: 233px;
+/*		height: auto;*/
+/*		border: 1px solid red;*/
+		background-color: hsla(0,0%,100%,1.00);
+		
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+	}
+	
+	.picture-container img {
+		width: 100%;
+		height: auto;
+	}
+	
+	footer {
+		width:731px;
+	}
 }
-@media only screen 
-and (min-width : 1200px) {
+
+@media screen and (min-width : 980px) {
 /* Desktops and laptops ----------- */
 
+	.navigation {
+		width: 980px;
+		
+		font-size: 14pt;	
+	}
+	
+	.navigation-container {
+		width: 100%;
+		height: 4vh;
+	}
+	
+	main {
+		max-width: 980px;
+		margin: 0 auto;
+/*		background-color: aquamarine;*/
+	}
+
+	.full-frame {
+		height: auto;
+		
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	.full-frame:nth-child(even){
+		flex-direction: row-reverse;
+	}
+	
+	article {
+		width: 482px;
+		
+	}
+	
+	article p {
+		font-size: 12pt;
+		padding: 20px 0;
+	}
+	
+	.picture-container {
+		width: 482px;
+/*		height: auto;*/
+/*		border: 1px solid red;*/
+		background-color: hsla(0,0%,100%,1.00);
+		
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+	}
+	
+	.picture-container img {
+		width: auto;
+		height: auto;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	
+	footer {
+		width:980px;
+	}
 }
