@@ -27,22 +27,22 @@
 
 </head>
 <body>
-	<section class="landing">
+	<section id="section1" class="landing">
 		<h1>De Stijl</h1>
 	</section>
 
 	<nav class="navigation">
 		<ul class="navigation-container">
-			<li class="nav-li"><a href="#"><span class="nav-span">Home<!--&#x2008;&#x2302;--></span></a></li>
-			<li class="nav-li"><a href="#"><span class="nav-span">Origins</span></a></li>
-			<li class="nav-li"><a href="#"><span class="nav-span">Thing2</span></a></li>
-			<li class="nav-li"><a href="#"><span class="nav-span">Thing3</span></a></li>
-			<li class="nav-li"><a href="#"><span class="nav-span">Influenced</span></a></li>
+			<li class="nav-li"><a href="#section1" onclick="smoothScr.anim('section1')"><span class="nav-span">Home<!--&#x2008;&#x2302;--></span></a></li>
+			<li class="nav-li"><a href="#section2" onclick="smoothScr.anim('section2')"><span class="nav-span">Origins</span></a></li>
+			<li class="nav-li"><a href="#section3" onclick="smoothScr.anim('section3')"><span class="nav-span">Thing2</span></a></li>
+			<li class="nav-li"><a href="#section4" onclick="smoothScr.anim('section4')"><span class="nav-span">Thing3</span></a></li>
+			<li class="nav-li"><a href="#section5" onclick="smoothScr.anim('section5')"><span class="nav-span">Influenced</span></a></li>
 		</ul>
 	</nav>
 
 	<main>
-		<section class="full-frame section-1">
+		<section id="section2" class="full-frame section-1">
 			<picture class="picture-container" alt="Red and Blue Chair designed by Gerrit Rietveld in 1917">
 
 			  <!-- Default low resolution image -->
@@ -65,7 +65,7 @@
 			</article>
 		</section>
 
-		<section class="full-frame section-2">
+		<section id="section3" class="full-frame section-2">
 			<picture class="picture-container" alt="Red and Blue Chair designed by Gerrit Rietveld in 1917">
 
 			  <!-- Default low resolution image -->
@@ -88,7 +88,7 @@
 			</article>
 		</section>
 		
-		<section class="full-frame section-3">
+		<section id="section4" class="full-frame section-3">
 			<picture class="picture-container" alt="Red and Blue Chair designed by Gerrit Rietveld in 1917">
 
 			  <!-- Default low resolution image -->
@@ -111,7 +111,7 @@
 			</article>
 		</section>
 		
-		<section class="full-frame section-4">
+		<section id="section5" class="full-frame section-4">
 			<picture class="picture-container" alt="Red and Blue Chair designed by Gerrit Rietveld in 1917">
 
 			  <!-- Default low resolution image -->
@@ -149,5 +149,6 @@
 	  </ul>	
 -->
 	</footer>
+	<script src="scripts/scripts.js"></script>
 </body>
 </html>
