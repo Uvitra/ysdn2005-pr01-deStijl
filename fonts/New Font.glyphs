@@ -47,13 +47,13 @@ unicode = 0043;
 },
 {
 glyphname = D;
-lastChange = "2017-09-17 19:22:10 +0000";
+lastChange = "2017-09-19 21:22:48 +0000";
 layers = (
 {
 backgroundImage = {
 crop = "{{0, 0}, {960.75, 1524}}";
-imagePath = "/Users/aaronvince/Documents/YSDN/2017-09-Y2F2017/2005 — Interactivity 2/ysdn2005-pr1/Stijl_vol_04_nr_09_p_129.jpg";
-transform = "{1, 0, 0, 1, 119, -1321}";
+imagePath = "../../../YSDN/2017-09-Y2F2017/2005 — Interactivity 2/ysdn2005-pr1/Stijl_vol_04_nr_09_p_129.jpg";
+transform = "{1, 0, 0, 1, 84, -957}";
 };
 layerId = "637B66DF-7D02-45A0-8187-B1CDE923F593";
 width = 600;
