@@ -70,7 +70,7 @@ table {
 		width: 100vw;
 		height: 100vh;
 
-		background-image: url(../images/Composition-VII-the-three-graces—Theo-van-Doesburg.svg);
+		background-image: url("../images/Composition-VII-the-three-graces—Theo-van-Doesburg.svg");
 		background-position: center;
 		background-size: auto 100vh;
 
@@ -143,7 +143,7 @@ table {
 	/*	border: 1px red solid;*/
 		z-index: 1;
 
-		font-size: 3.25vw;
+		font-size: 3vw;
 		background-color: hsla(47,28%,87%,1.00);
 
 		display: flex;
@@ -251,7 +251,7 @@ table {
 		height: auto;
 		max-width: 100%;
 		max-height: 100%;
-		box-shadow: 0 0 15px hsla(210, 5%, 5%, .15);
+/*		box-shadow: 0 0 15px hsla(210, 5%, 5%, .15);*/
 	}
 	
 	article {
@@ -270,7 +270,7 @@ table {
 		font-size: 12pt;
 		line-height: 1.2;
 		
-		text-align: justify;
+/*		text-align: justify;*/
 	}
 
 	footer {
