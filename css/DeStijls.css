@@ -1,0 +1,857 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*
+
+		My general styles (all sizes)
+
+*/
+
+@font-face {
+    font-family: "DeStijl";
+    src: url("../faunts/DeStijl-Regular.woff2") format('woff2'),
+		url(../faunts/DeStijl-Regular.woff) format('woff');
+}
+
+body {
+/*	box-shadow: 0 0 25px hsla(210, 95%, 50%, .75);*/
+	width: 100vw;
+	height: 100%;
+/*	width: 482px;*/
+	
+	font-family: "Avenir Next", Avenir, sans-serif;
+}
+
+.vertical-bar-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.vertical-bar {
+	height: 1080px;
+	width: 16px;
+	background-color: black;
+
+}
+
+.vbar13, .vbar12, .vbar11, .vbar10, .vbar9, .vbar8, .vbar7, .vbar6, .vbar5, .vbar4, .vbar3, .vbar2, .vbar1 {
+		display: none;
+	}
+
+.horizontal-bar-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.horizontal-bar {
+	width: 100vw;
+	height: 16px;
+	margin-top: 67px;
+	background-color: black;
+}
+
+.hbar12, .hbar11, .hbar10, .hbar9, .hbar8, .hbar7, .hbar6, .hbar4, .hbar3, .hbar2, .hbar1 {
+	display: none;
+} 
+
+.positioning-container-content {
+
+}
+
+h1 {
+	text-transform: uppercase;
+	font-family: "DeStijl", fantasy;
+	font-size: 32pt;
+
+	width: 233px;
+	height: 57px;
+
+	text-align: center;
+	background-color: white;
+	margin-left: 16px;
+	padding-top: 10px;
+}
+
+h2 {
+	text-transform: capitalize;
+	font-size: 21px;
+	font-weight: 600;
+	padding-top: 16px;
+	padding-left: 16px;
+	margin-bottom: 16px;
+	
+	border-top: 2px solid black;
+
+	width: auto;
+	
+
+	color: black;
+
+	transition: color 0.5s ease-out;
+}
+
+p {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 1.1;
+	padding: 16px;
+}
+
+img {
+	width: 100vw;
+	height: auto;
+}
+
+.footer-content p {
+	overflow-wrap: break-word;
+}
+
+@media only screen 
+and (min-width : 514px) {
+	body {
+/*		width: 514px;*/
+		margin: 0 auto;
+	}
+
+	.hbar12, .hbar11, .hbar10, .hbar9, .hbar8, .hbar7, .hbar6, .hbar4, .hbar3, .hbar2, .hbar1 {
+		display: block;
+	}
+	
+	.hbar3 {
+		opacity: 0;
+	}
+	
+	.hbar10 {
+		width:50%;
+	}
+
+	.vbar1, .vbar2, .vbar3, .vbar4, .vbar5, .vbar6, .vbar7 {
+		display: block;
+	}
+	
+	.vbar5 {
+		visibility: hidden;
+	}
+	
+	.positioning-container-vertical-bars {
+		width: 514px;
+		position: absolute;
+		left: 0px;
+		right: 0px;
+		top: 0px;
+		margin: 0 auto;
+		z-index: -1;
+	}
+
+	.positioning-container-horizontal-bars {
+		position: absolute;
+		left: 0px;
+		right: 0px;
+		top: 0;
+		margin: 0 auto;
+		z-index: -1;
+	}
+
+	.positioning-container-content {
+		width: 514px;
+		
+		position: absolute;
+		left: 0px;
+		right: 0px;
+		top: 0;
+		margin: 0 auto;
+		
+/*		background-color: hsla(359,40%,39%,0.41);*/
+	}
+	
+	.content-container {
+		overflow: hidden;
+
+		transition: width 0.5s ease-out, height 0.5s ease-out;
+	}
+
+	.content-container:hover {
+		width: 399px;
+		height: 565px;
+
+		background-color: white;
+	}
+
+	h2 {
+		color: hsla(0,0%,100%,0.60);
+		height: 51px;
+		margin-bottom: 0px;
+		
+		border-top: 0px solid black;
+	}
+	
+	.content-container:hover h2 {
+		color: white;
+	}
+	
+
+	.content-container:hover .content {
+		opacity: 1;
+	}
+
+	.content {
+		opacity: 0;
+		position: absolute;
+		left: 0;
+		top: 67px;
+		padding:16px 16px 0px;
+
+		transition: opacity 0.25s ease-out;
+	}
+
+	.content img {
+		width: 233px;
+		height: auto;
+		float: right;
+
+		padding-left: 16px;
+		padding-bottom: 16px;
+	}
+	
+	p {
+		padding: 0px;
+		padding-bottom: 16px;
+	}
+	
+	/* Use this to change the colour and position of the origin box */
+	
+	.origins-container {
+		background-color: hsla(358,75%,54%,1.00);
+
+		position: absolute;
+		left: 16px;
+		top: 83px;
+
+		width: 150px;
+		height: 67px;
+		
+		z-index: 1;
+		
+	}
+	
+	/* change this color to the color of the box */
+	
+	.origins-container:hover h2 {
+		background-color: hsla(358,75%,54%,1.00);
+
+	}
+	
+	/* Use this to change the colour and position of the founding box */
+	
+	.founding-container {
+		background-color: hsla(211,74%,59%,1.00);
+
+		position: absolute;
+		left: 265px;
+		top: 166px;
+
+		width: 150px;
+		height: 150px;
+		
+		transition: transform 0.5s ease-in-out, width 0.5s ease-out, height 0.5s ease-out;
+	}
+	
+	.founding-container:hover {
+		transform: translate(-249px, -83px);
+		z-index: 123456789;
+		
+		width: 482px;
+		height: 814px;
+	}
+	
+	/* change this color to the color of the box */
+	
+	.founding-container:hover h2 {
+		background-color: hsla(211,73%,59%,1.00);
+
+	}
+	
+	/* Use this to change the colour and position of the after 1920s box */
+	
+	.after-1920-container {
+		background-color: hsla(46,89%,55%,1.00);
+
+		position: absolute;
+		left: 99px;
+		top: 332px;
+
+		width: 150px;
+		height: 233px;
+		
+		transition: transform 0.5s ease-in-out, width 0.5s ease-out, height 0.5s ease-out;
+	}
+	
+	.after-1920-container:hover {
+		transform: translate(-83px, -249px);
+		z-index: 123456789;
+		
+		width: 482px;
+		height: 565px;
+	}
+	
+	.after-1920-container h2 {
+		transform: translate(0px, 166px)
+	}
+	
+	/* change this color to the color of the box */
+	
+	.after-1920-container:hover h2 {
+		background-color: hsla(46,90%,55%,1.00);
+		transform: translate(0px, 0px)
+
+	}
+	
+	/* Use this to change the colour and position of the Present day box */
+	
+	.present-day-container {
+		background-color: hsla(358,75%,54%,1.00);
+
+		position: absolute;
+		left: 265px;
+		top: 498px;
+
+		width: 233px;
+		height: 150px;
+		
+		transition: transform 0.5s ease-in-out, width 0.5s ease-out, height 0.5s ease-out;
+	}
+	
+	.present-day-container:hover {
+		transform: translate(-249px, -415px);
+		z-index: 123456789;
+		
+		width: 482px;
+		height: 565px;
+	}
+	
+	/* change this color to the color of the box */
+	
+	.present-day-container:hover h2 {
+		background-color: hsla(358,75%,54%,1.00);
+	}
+	
+	/* Use this to change the colour and position of the footer box */
+	
+	.footer-container {
+		background-color: hsla(211,73%,59%,1.00);
+
+		position: absolute;
+		left: 16px;
+		top: 664px;
+
+		width: 150px;
+		height: 67px;
+		
+		transition: transform 0.5s ease-in-out, width 0.5s ease-out, height 0.5s ease-out;
+	}
+	
+	.footer-container:hover {
+		transform: translate(-0px, -431px);
+		z-index: 123456789;
+		
+		width: 482px;
+		height: 482px;
+		
+		border-top: 16px solid black;
+	}
+	
+	/* change this color to the color of the box */
+	
+	.footer-container:hover h2 {
+		background-color: hsla(211,73%,59%,1.00);
+	}
+	
+	.footer-content p {
+		overflow-wrap: break-word; 	
+		word-wrap: break-word;
+
+		-ms-word-break: break-all;
+
+		word-break: break-all;
+
+		word-break: break-word;
+
+
+		-ms-hyphens: auto;
+		-moz-hyphens: auto;
+		-webkit-hyphens: auto;
+		hyphens: auto;
+	}
+}
+
+@media only screen 
+and (min-width : 763px) {
+	body {
+/*		width: 763px;*/
+		margin: 0 auto;
+	}
+	
+	.positioning-container-vertical-bars {
+		width: 763px;
+	}
+
+	.vbar8, .vbar9, .vbar10 {
+		display: block;
+	}
+	
+	.hbar3 {
+		opacity: 0;
+	}
+	
+	.hbar10 {
+		visibility: hidden;
+	}
+	
+	.vbar5 {
+		visibility: visible;
+	}
+	
+	.vbar3 {
+		visibility: hidden;
+	}
+	
+	/* Use this to change the colour and position of the origin box */
+	
+	.origins-container {
+		background-color: hsla(358,75%,54%,1.00);
+
+		position: absolute;
+		left: -25.5px;
+		top: 83px;
+
+		width: 150px;
+		height: 67px;
+		
+		z-index: 1;
+		
+	}
+	
+	/* change this color to the color of the box */
+	
+	.origins-container:hover h2 {
+		background-color: hsla(358,75%,54%,1.00);
+
+	}
+	
+	/* Use this to change the colour and position of the founding box */
+	
+	.founding-container {
+		background-color: hsla(211,74%,59%,1.00);
+
+		position: absolute;
+		left: 306.5px;
+		top: 166px;
+
+		width: 233px;
+		height: 150px;
+		
+		transition: transform 0.5s ease-in-out, width 0.5s ease-out, height 0.5s ease-out;
+	}
+	
+	.founding-container:hover {
+		transform: translate(-332px, -83px);
+		z-index: 123456789;
+		
+		width: 565px;
+		height: 814px;
+	}
+	
+	/* change this color to the color of the box */
+	
+	.founding-container:hover h2 {
+		background-color: hsla(211,73%,59%,1.00);
+
+	}
+	
+	/* Use this to change the colour and position of the after 1920s box */
+	
+	.after-1920-container {
+		background-color: hsla(46,89%,55%,1.00);
+
+		position: absolute;
+		left: -25.5px;
+		top: 332px;
+
+		width: 233px;
+		height: 233px;
+		
+		transition: transform 0.5s ease-in-out, width 0.5s ease-out, height 0.5s ease-out;
+	}
+	
+	.after-1920-container:hover {
+		transform: translate(-0px, -249px);
+		z-index: 123456789;
+		
+		width: 482px;
+		height: 565px;
+	}
+	
+	.after-1920-container h2 {
+		transform: translate(0px, 166px)
+	}
+	
+	/* change this color to the color of the box */
+	
+	.after-1920-container:hover h2 {
+		background-color: hsla(46,90%,55%,1.00);
+		transform: translate(0px, 0px)
+
+	}
+	
+	/* Use this to change the colour and position of the Present day box */
+	
+	.present-day-container {
+		background-color: hsla(358,75%,54%,1.00);
+
+		position: absolute;
+		left: 389.5px;
+		top: 498px;
+
+		width: 233px;
+		height: 67px;
+		
+		transition: transform 0.5s ease-in-out, width 0.5s ease-out, height 0.5s ease-out;
+	}
+	
+	.present-day-container:hover {
+		transform: translate(-249px, -415px);
+		z-index: 123456789;
+		
+		width: 482px;
+		height: 565px;
+	}
+	
+	/* change this color to the color of the box */
+	
+	.present-day-container:hover h2 {
+		background-color: hsla(358,75%,54%,1.00);
+	}
+	
+	/* Use this to change the colour and position of the footer box */
+	
+	.footer-container {
+		background-color: hsla(211,73%,59%,1.00);
+
+		position: absolute;
+		left: 223.5px;
+		top: 581px;
+
+		width: 150px;
+		height: 150px;
+		
+		transition: transform 0.5s ease-in-out, width 0.5s ease-out, height 0.5s ease-out;
+	}
+	
+	.footer-container:hover {
+		transform: translate(-0px, -249px);
+		z-index: 123456789;
+		
+		width: 399px;
+		height: 565px;
+		
+		border-top: 0px solid black;
+		border-bottom: 16px solid black;
+	}
+	
+	/* change this color to the color of the box */
+	
+	.footer-container:hover h2 {
+		background-color: hsla(211,73%,59%,1.00);
+	}
+}
+
+@media only screen 
+and (min-width : 1012px) {
+	body {
+/*		width: 1012px;*/
+		margin: 0 auto;
+	}
+	
+	.positioning-container-vertical-bars {
+		width: 1012px;
+	}
+
+
+	.vbar11, .vbar12, .vbar13 {
+		display: block;
+	}
+	
+	.hbar3 {
+		opacity: 1;
+	}
+	
+	.vbar3 {
+		visibility: visible;
+	}
+	
+	.vbar5 {
+		visibility: hidden;
+	}
+	
+	.vbar10 {
+		visibility: hidden;
+	}
+	
+	.hbar5 {
+		visibility: hidden;
+	}
+	
+	/* Use this to change the colour and position of the origin box */
+	
+	.origins-container {
+		background-color: hsla(358,75%,54%,1.00);
+
+		position: absolute;
+		left: -150px;
+		top: 83px;
+
+		width: 150px;
+		height: 67px;
+		
+		z-index: 1;
+		
+	}
+	
+	/* change this color to the color of the box */
+	
+	.origins-container:hover h2 {
+		background-color: hsla(358,75%,54%,1.00);
+
+	}
+	
+	/* Use this to change the colour and position of the founding box */
+	
+	.founding-container {
+		background-color: hsla(211,74%,59%,1.00);
+
+		position: absolute;
+		left: 348px;
+		top: 166px;
+
+		width: 233px;
+		height: 316px;
+		
+		transition: transform 0.5s ease-in-out, width 0.5s ease-out, height 0.5s ease-out;
+	}
+	
+	.founding-container:hover {
+		transform: translate(-332px, -83px);
+		z-index: 123456789;
+		
+		width: 565px;
+		height: 814px;
+	}
+	
+	/* change this color to the color of the box */
+	
+	.founding-container:hover h2 {
+		background-color: hsla(211,73%,59%,1.00);
+
+	}
+	
+	/* Use this to change the colour and position of the after 1920s box */
+	
+	.after-1920-container {
+		background-color: hsla(46,89%,55%,1.00);
+
+		position: absolute;
+		left: 16px;
+		top: 332px;
+
+		width: 150px;
+		height: 233px;
+		
+		transition: transform 0.5s ease-in-out, width 0.5s ease-out, height 0.5s ease-out;
+	}
+	
+	.after-1920-container:hover {
+		transform: translate(-83px, -166px);
+		z-index: 123456789;
+		
+		width: 482px;
+		height: 565px;
+	}
+	
+	.after-1920-container h2 {
+		transform: translate(0px, 166px)
+	}
+	
+	/* change this color to the color of the box */
+	
+	.after-1920-container:hover h2 {
+		background-color: hsla(46,90%,55%,1.00);
+		transform: translate(0px, 0px)
+
+	}
+	
+	/* Use this to change the colour and position of the Present day box */
+	
+	.present-day-container {
+		background-color: hsla(358,75%,54%,1.00);
+
+		position: absolute;
+		left: 431px;
+		top: 498px;
+
+		width: 233px;
+		height: 67px;
+		
+		transition: transform 0.5s ease-in-out, width 0.5s ease-out, height 0.5s ease-out;
+	}
+	
+	.present-day-container:hover {
+		transform: translate(-249px, -415px);
+		z-index: 123456789;
+		
+		width: 482px;
+		height: 565px;
+	}
+	
+	/* change this color to the color of the box */
+	
+	.present-day-container:hover h2 {
+		background-color: hsla(358,75%,54%,1.00);
+	}
+	
+	/* Use this to change the colour and position of the footer box */
+	
+	.footer-container {
+		background-color: hsla(211,73%,59%,1.00);
+
+		position: absolute;
+		left: 182px;
+		top: 581px;
+
+		width: 150px;
+		height: 150px;
+		
+		transition: transform 0.5s ease-in-out, width 0.5s ease-out, height 0.5s ease-out;
+	}
+	
+	.footer-container:hover {
+		transform: translate(-0px, -415px);
+		z-index: 123456789;
+		
+		width: 399px;
+		height: 565px;
+		
+		border-top: 0px solid black;
+		border-bottom: 16px solid black;
+	}
+	
+	/* change this color to the color of the box */
+	
+	.footer-container:hover h2 {
+		background-color: hsla(211,73%,59%,1.00);
+	}
+}
